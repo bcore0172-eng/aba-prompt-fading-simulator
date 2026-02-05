@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABA Prompt Fading Simulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>ABA Prompt Fading Simulator</h1>
+
+<div id="prompt">Do this action now</div>
+
+<button id="fadeBtn">Fade Prompt</button>
+<button id="resetBtn">Reset Prompt</button>
+<button id="exportBtn">Export CSV</button>
+
+<p id="trialCount">Trial: 0</p>
+<p id="promptLevel">Prompt Level: Full Verbal</p>
+
+<label for="promptSelect">Select Prompt Type:</label>
+<select id="promptSelect">
+    <option value="Full Verbal">Full Verbal</option>
+    <option value="Partial Verbal">Partial Verbal</option>
+    <option value="Gestural">Gestural</option>
+    <option value="Independent">Independent</option>
+</select>
+
+<p id="timer">Timer: 0s</p>
+<p id="mastery">Mastery: 0 / 3 independent trials</p>
+
+<script src="script.js"></script>
+</body>
+</html>
